@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Skript pingt Master an und betaetigt Reset 
-# wenn Master nicht erreichbar
+# Shell Script uses the command ping to monitor a Host called Master
+# If the Host is not reachable it triggers a reset and writes 
+# the date into a Logfile
 
 sleep 60
 

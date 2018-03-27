@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Skript pingt Slaves an und betaetigt Reset 
-# wenn Slave nicht erreichbar
+# Shell Script uses the command ping to monitor a hosts which hostnames are stored in a file called Slaves.txt
+# If one of the hosts is not reachable it triggers a reset and writes the hostname and the date into a Logfile
+
 
 sleep 60
 
