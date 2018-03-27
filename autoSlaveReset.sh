@@ -13,8 +13,8 @@ while read HOST
 do
   COUNT=$(ping -c 5 $HOST | grep 'received' | awk -F',' '{ print $2 }' | awk '{print $1}')
   if [ $COUNT -eq 0 ]; then
-    echo "Host: "$HOST "ist ausgefallen! Datum: $(date)" >> ~/Logs/PingLog.txt
-    echo "Host: "$HOST "wurde neu gestartet! Datum: $(date)" >> ~/Logs/PingLog.txt
+    echo "Host: "$HOST "not reachable! Date: $(date)" >> ~/Logs/PingLog.txt
+    echo "Host: "$HOST "was reseted! Date: $(date)" >> ~/Logs/PingLog.txt
 
     SLAVENO=$(echo "$HOST" | awk -F'-' '{ print $2}')
    
